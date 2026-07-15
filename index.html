@@ -1,1 +1,188 @@
+<!DOCTYPE html>
 
+<html lang="en-US">
+
+    <!--Head section-->
+    <head>
+        <title>Bosh sahifa</title>
+
+        <!-- Meta tags -->
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <!--Body section-->
+    <body>
+        <!--Form section-->
+        <form action="#" autocomplete="on" method="POST">
+            <!--Personal information section-->
+            <div class="personal-info">
+                <h2>Shaxsiy ma'lumotlar</h2> <hr>
+                <div class="form-group">
+                    <label for="fname">Ism</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Ismingizni yozing" title="Ismingizni yozing!" required>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="lname">Familiya</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Familiyangizni yozing" title="Familiyangizni yozing!" required>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="region">Viloyat:</label>
+                    <select id="region" name="region" title="Viloyatingizni tanlang!" required>
+                        <option value="andijon">Andijon</option>
+                        <option value="buxoro">Buxoro</option>
+                        <option value="fargona">Farg'ona</option>
+                        <option value="qashqadaryo">Qashqadaryo</option>
+                        <option value="andijon">Xorazm</option>
+                        <option value="namangan">Namangan</option>
+                        <option value="navoiy">Navoiy</option>
+                        <option value="samarqand">Samarqand</option>
+                        <option value="surxondaryo">Surxondaryo</option>
+                        <option value="sirdaryo">Sirdaryo</option>
+                        <option value="toshkent">Toshkent</option>
+                    </select>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="city">Shaxar</label> <br>
+                    <input type="text" id="city" name="city" placeholder="Shaxringizni yozing" title="Shaxringizni yozing!" required>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="loc">Yashash manzili</label><br>
+                    <input type="text" id="loc" name="location" placeholder="Manzilingizni yozing" title="Yashash manzilingizni yozing!" required>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="post">Pochta indeksi</label><br>
+                    <input type="number" id="post" name="post" placeholder="1234" title="Pochta indeksingizni yozing!" required>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="phone">Telefon raqami</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="^\+998\d{9}$" placeholder="+998 xxx xx xx" title="Telefon raqamingizni yozing!" required>
+                </div> <br>
+
+                <div class="form-group">
+                    <label for="email">Elektron pochta</label><br>
+                    <input type="email" id="email" name="email" placeholder="john@mail.com" title="Elektron pochtangizni yozing!" required>
+                </div> <br>
+
+                <div class="gender">
+                    <label>Jinsingizni tanlang:</label> <br>
+                    <input type="radio" id="erkak" name="gender" value="Erkak">
+                    <label for="erkak">Erkak</label>
+
+                    <input type="radio" id="ayol" name="gender" value="Ayol">
+                    <label for="ayol">Ayol</label>
+                </div>
+            </div> <hr>
+
+            <!-- Evaluation section -->
+             <div class="evaluation">
+                <h2>Mehmonxona xizmatlarini baholang</h2>
+
+                <!-- Overall Experience -->
+                <fieldset>
+                    <legend>Mehmonxona sifati (Umumiy)</legend>
+
+                    <div class="rates">
+                        <input type="radio" id="good" name="overall" value="Good">
+                        <label for="good">Yaxshi</label>
+
+                        <input type="radio" id="normal" name="overall" value="Normal">
+                        <label for="normal">O'rtacha</label>
+
+                        <input type="radio" id="bad" name="overall" value="Bad">
+                        <label for="bad">Yomon</label>
+                    </div>
+                </fieldset>
+
+                <!-- Staff Service -->
+                <fieldset>
+                    <legend>Xodimlar xizmati</legend>
+
+                    <div class="rates">
+                        <input type="radio" id="good" name="staff" value="Good">
+                        <label for="good">Yaxshi</label>
+
+                        <input type="radio" id="normal" name="staff" value="Normal">
+                        <label for="normal">O'rtacha</label>
+
+                        <input type="radio" id="bad" name="staff" value="Bad">
+                        <label for="bad">Yomon</label>
+                    </div>
+                </fieldset>
+
+                <!-- Service -->
+                <fieldset>
+                    <legend>Servis xizmatlari</legend>
+
+                    <div class="rates">
+                        <input type="radio" id="good" name="service" value="Good">
+                        <label for="good">Yaxshi</label>
+
+                        <input type="radio" id="normal" name="service" value="Normal">
+                        <label for="normal">O'rtacha</label>
+
+                        <input type="radio" id="bad" name="service" value="Bad">
+                        <label for="bad">Yomon</label>
+                    </div>
+                </fieldset>
+
+                <!-- Food & Dining -->
+                <fieldset>
+                    <legend>Ovqat sifati</legend>
+
+                    <div class="rates">
+                        <input type="radio" id="good" name="food" value="Good">
+                        <label for="good">Yaxshi</label>
+
+                        <input type="radio" id="normal" name="food" value="Normal">
+                        <label for="normal">O'rtacha</label>
+
+                        <input type="radio" id="bad" name="food" value="Bad">
+                        <label for="bad">Yomon</label>
+                    </div>
+                </fieldset>
+
+                <!-- Internet speed -->
+                <fieldset>
+                    <legend>Internet tezligi</legend>
+
+                    <div class="rates">
+                        <input type="radio" id="good" name="internet" value="Good">
+                        <label for="good">Yaxshi</label>
+
+                        <input type="radio" id="normal" name="internet" value="Normal">
+                        <label for="normal">O'rtacha</label>
+
+                        <input type="radio" id="bad" name="internet" value="Bad">
+                        <label for="bad">Yomon</label>
+                    </div>
+                </fieldset>
+
+                <!-- Room Cleanliness -->
+                <fieldset>
+                    <legend>Xona tozaligi</legend>
+
+                    <div class="rates">
+                        <input type="radio" id="good" name="room" value="Good">
+                        <label for="good">Yaxshi</label>
+
+                        <input type="radio" id="normal" name="room" value="Normal">
+                        <label for="normal">O'rtacha</label>
+
+                        <input type="radio" id="bad" name="room" value="Bad">
+                        <label for="bad">Yomon</label>
+                    </div>
+                </fieldset>
+             </div>
+            <input type="submit" value="Submit"></input>
+        </form>
+    </body>
+</html>
